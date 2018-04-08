@@ -1,0 +1,66 @@
+<!--
+CIS 217 – Web Programming – Programming Final Project
+JavaScript Dynamic Calendar
+    
+    Author: Marcais Jackson
+    Date:   12/1/2017
+
+    Filename: My Advanced Calender.html
+   -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>My Advanced Calender</title>
+<link rel="stylesheet" href="My Advanced Calender styles.css"/>
+<script src="My Advanced Calender.js"></script>
+
+</head>
+<body onLoad="setToday()">
+<h1>My Advanced Calender. Enjoy!!!</h1>
+<em>Select-A-Month</em>
+<FORM NAME="calControl" onSubmit="return false;" method="post">
+<TABLE CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD COLSPAN=7>
+<SELECT NAME="month" onChange="selectDate()">
+<OPTION>January</OPTION>
+<OPTION>February</OPTION>
+<OPTION>March</OPTION>
+<OPTION>April</OPTION>
+<OPTION>May</OPTION>
+<OPTION>June</OPTION>
+<OPTION>July</OPTION>
+
+<OPTION>August</OPTION>
+<OPTION>September</OPTION>
+<OPTION>October</OPTION>
+<OPTION>November</OPTION>
+<OPTION>December</OPTION>
+</SELECT>
+<INPUT NAME="year" TYPE=TEXT SIZE=4 MAXLENGTH=4>
+<INPUT TYPE="button" NAME="Go" value="Build!" onClick="selectDate()">
+</TD>
+</TR>
+</FORM>
+<FORM NAME="calButtons" method="post">
+<TR><TD><textarea FONT="Courier" NAME="calPage" WRAP=no ROWS=8 COLS=22></textarea></TD><TR>
+<TD>
+<INPUT TYPE=BUTTON NAME="previousYear" VALUE=" << " onClick="setPreviousYear()">
+<INPUT TYPE=BUTTON NAME="previousYear" VALUE=" < " onClick="setPreviousMonth()">
+<INPUT TYPE=BUTTON NAME="previousYear" VALUE="Today" onClick="setToday()">
+<INPUT TYPE=BUTTON NAME="previousYear" VALUE=" > " onClick="setNextMonth()">
+<INPUT TYPE=BUTTON NAME="previousYear" VALUE=" >> " onClick="setNextYear()">
+</TD>
+</TR>
+</TABLE>
+</FORM></FONT>
+<address>My HCC email: mjackson33@owlmail.harford.edu
+
+
+<!--I figured I might as well give the user a shortcut to owlnet.-->
+<a href="https://owlnet.harford.edu">
+Here's a shortcut to <abbr title="Harford Community College's">HCC's</abbr> Owlnet, just in case.
+
+</body>
+</html>

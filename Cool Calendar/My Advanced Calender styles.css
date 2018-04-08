@@ -1,0 +1,58 @@
+/*
+   CIS 217 – Web Programming – Programming Final Project
+JavaScript Dynamic Calendar
+    
+    Author: Marcais Jackson
+    Date:   12/1/2017
+   
+   Filename: My Advanced Calender.css
+   This basically controls the overall style for My Advanced Calender which includes the table, table 
+   border, table-column, table-cell, font, and background.
+*/
+body {
+line-height: 1;
+margin: 50px;
+background-color:green;
+font-family:Agency FB;
+}
+div {
+background: #9abab5;
+border-radius: 15px;
+box-sizing: border-box;
+padding: 15px;
+width: 310px;
+}
+header {
+overflow: clear;
+position: relative;
+}
+h2 {
+font-family: sans-serif;
+font-size: 20px;
+font-weight: 700;
+margin: 0 0 10px;
+text-align: center;
+}
+table {
+border-color: black;
+background: #fffe;
+border-collapse: collapse;
+font-size: 20px;
+width: 50%;
+}
+td {
+border: 1px solid #ccc;
+border-color: black;
+color: #444;
+line-height: 22px;
+text-align: center;
+}
+tr {
+color: #222;
+font-weight: 700;
+}
+.selected {
+background: #f0951d;
+border: 0;
+box-shadow: 0 2px 6px rgba(0, 0, 0, .5) inset;
+}​
