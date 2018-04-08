@@ -1,0 +1,44 @@
+<!--
+    CIS 217 – Web Programming – Programming Assignment
+	JavaScript Dynamic Multiplication Table
+    
+    Author: Marcais Jackson
+    Date:   11/30/2017
+
+    Filename: My Dynamic Multiplication Table.html
+   -->
+   <!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title> My Dynamic Multiplication Table</title>
+<link rel="stylesheet" href="My Dynamic Multiplication Table styles.css"/>
+
+</head>
+<body>
+<h1>My Advanced Multiplication Table. Enjoy!!!</h1>
+<p>Please Note: To make this table work, you'll have to enter one number up than what you intend in the row and column like 
+13x13 to display a 12x12 table. Also, hit your browser's reload current page button when you're done to go back to the 
+homepage, just letting you know.</p>
+<script src="My Dynamic Multiplication Table.js"></script>
+<form name="oForm" method="post">
+<!--NOTE: To make this table work, you'll have to enter one number up than what you intend like 13x13 to display a 
+12x12 table, just letting you know.--> 
+<input type="text" name="row" id="txt_name" size="10" maxlength="70" ">
+<!--var row = oForm.elements["row"].value;--><b>Row</b>
+<input type="text" name="col" id="txt_name" size="10" maxlength="70" ">
+<!--var col= oForm.elements["col"].value;--><b>Column</b>
+<input type="submit" onclick="OnCk();"><br />
+</form>
+
+<address >My HCC email: mjackson33@owlmail.harford.edu
+
+
+<!--I figured I might as well give the user a shortcut to owlnet.-->
+<a href="https://owlnet.harford.edu">
+Here's a shortcut to <abbr title="Harford Community College's">HCC's</abbr> Owlnet, just in case.
+
+</body>
+
+</html>
+<!--Hit your browser's reload current page button when you're done to go back to the homepage.-->
